@@ -1,0 +1,10 @@
+import os
+from TwitterAPI import TwitterAPI
+
+
+CONSUMER_KEY = os.environ['CONSUMER_KEY']
+CONSUMER_SECRET = os.environ['CONSUMER_SECRET']
+OAUTH_TOKEN = os.environ['OAUTH_TOKEN']
+OAUTH_SECRET = os.environ['OAUTH_SECRET']
+
+api = TwitterAPI(CONSUMER_KEY, CONSUMER_SECRET, OAUTH_TOKEN, OAUTH_SECRET)
